@@ -1,0 +1,16 @@
+@model NerdDinner.Models.Dinner
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>No Permission to Change This Item</h1>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
